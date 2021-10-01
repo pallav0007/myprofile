@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'frontend\myassistant.css' %}">
+<div class="wrapper">
+<div class="bot-instruction">
+    <img src="https://images.assetsdelivery.com/compings_v2/kahovsky/kahovsky1712/kahovsky171200032.jpg" width="200" height="200" style="border-radius: 50%">
+    <div class="bio">
+
+        <span style="color: #1a2a6c"><b>My name is virav (which is virtaul pallav) I'm pallav's assistance and handle all queries for him</b></span>
+        <br>
+        <span style="color: darkred"><b>
+            Just follow these step</b>
+        </span>
+<br>
+        <span style="color: darkgreen"><b>Press green button to ask question and red to ask the same. You can ask me about Pallav's Profile, Education , Interest and much more and
+            I will be happy to help. I'm still learning...</b></span>
+    </div>
+</div>
+<div class="bot-space">
+    <div class="languages" id="div_language">
+      <h2 style="color: white" class="mb-3 text-light">Language</h2>
+      <select class="sel form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
+      <select class="sel form-select bg-secondary text-light" id="select_dialect"></select>
+    </div>
+
+
+    <div class="pop-up">
+    <div class="interface">
+        <h2 style="color:white;">Transcript</h2>
+        <div class="chat-text">
+            <div style="margin: 0.5%" class="suggestion" id="suggest"></div>
+            <div style="color: white" class="chat-human" id="interim"></div>
+            <div class="chat-bot" id="final"></div>
+
+        </div>
+
+        <div class="buttons">
+      <button class="btn btn-success" id="start">Ask a question</button>
+      <button class="btn btn-danger" id="stop">Get the answer</button>
+      <p id="status" class="lead mt-3 text-light" style="display: none">Listenting ...</p>
+    </div>
+
+    </div>
+    </div>
+</div>
+</div>
+  <script src="{% static "frontend/speechcommand.js" %}"></script>
+  <script src="{% static "frontend/language.js" %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+{% endblock %}

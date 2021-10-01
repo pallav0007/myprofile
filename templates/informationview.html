@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+
+{#<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">#}
+
+<div class="wrapper">
+<div class="sidebar">
+    <div class="profile-image">
+        <img class="pro-img" src="{% static 'images/Pallav Semwal.jpeg' %}" alt="Lamp" width="200" height="200">
+    </div>
+    <div class="bio">
+        {% for i in roles %}
+        <p style="margin: 1%;">{{ i.bio }}</p>
+        {% endfor %}
+    </div>
+    <div class="accounts">
+
+        <a href="https://www.hackerrank.com/pallavsemwal01 "  class="icon fa fa-user-circle fa-2x"></a>
+        <a href="https://github.com/pallav0007"  class="icon fa fa-github fa-2x"></a>
+        <a href="https://www.linkedin.com/in/pallav-semwal-198367191/"  class="icon fa fa-linkedin fa-2x"></a>
+
+
+
+
+
+
+    </div>
+</div>
+<div class="personal-information">
+<div class="fields">
+{% for post in object_list %}
+<div class="criteria">
+    <a  href="#" class="btn btn-primary" onclick="func(document.getElementById({{ forloop.counter }}))">{{post.fieldname}} &#9196;</a>
+    <div class="describe">
+    <p id="{{ forloop.counter }}" style="display:none">{{post.description}}</p>
+    </div>
+</div>
+    {% endfor %}
+</div>
+</div>
+</div>
+
+
+
+
+       <script>
+
+function func(obj) {
+    var state= obj.style.display
+    if(state==="none"){
+        obj.style.display="block";
+    }
+    else{
+        obj.style.display="none";
+    }
+
+}
+</script>
+    <link rel="stylesheet" type="text/css" href="{% static 'frontend\informationview.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+{% endblock content %}

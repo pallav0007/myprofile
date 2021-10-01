@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'frontend\informationview.css' %}">
+    <div style="display: flex;justify-content: center" >
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPg5IpgnFnDet_PYNp9JdomN75hsmSKnqSpbGh5e8YXpYRQg/viewform?embedded=true" width="640" height="753" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+    <style>
+    body{
+      background: #4DA0B0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+          }
+    </style>
+{% endblock %}

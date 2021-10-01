@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'frontend\myprojects.css' %}">
+    <div class="wrapper">
+{% for projects in object_list %}
+    <div class="card">
+    <div class="heading" >
+  <h5 style="text-align: center" class="card-header">{{ projects.name|upper }}</h5>
+    </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ projects.domain|title }}</h5>
+    <p class="card-text">{{ projects.about }}.</p>
+      <div class="somewhere">
+    <a href="{{ projects.url }}" class="btn btn-primary">View Project</a>
+      </div>
+  </div>
+</div>
+    {% endfor %}
+    </div>
+{% endblock %}

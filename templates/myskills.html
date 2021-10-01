@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'frontend\myskills.css' %}">
+  <div class="skill-container">
+    {% for i,j in d.items %}
+
+      <div class="card">
+  <div class="card-header">
+     {{ i|upper }}
+  </div>
+  <div class="card-body">
+  <div class="skill-container">
+            {% for a in j %}
+                <button style="margin: 2px;color: white" type="button" class="btn btn-info">{{ a |title}}</button>
+
+          {% endfor %}
+  </div>
+
+  </div>
+</div>
+
+   {% endfor %}
+  </div>
+{#{% for key  in context.keys %}#}
+{#    jj#}
+{#  {{ key}}#}
+{#  {% for value in value_list %}#}
+{#    {{ value }}#}
+{#  {% endfor %}#}
+
+{% endblock content %}

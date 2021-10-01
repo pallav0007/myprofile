@@ -1,0 +1,11 @@
+name : My name is Pallav Semwal
+Age : What's in the age , just a number.
+Location : I'm Indian .
+Education : Pursing Btech
+major/ branch / stream / department in Btech : Electronics and Communication
+Hobbies\ Passtime : Listening to Music and Playing Football
+Interest : I'm an enthusiastic learner, I taken interest in learning new things , developing and working on new projects.
+About \ Bio :Strong in design and integration with intuitive problem-solving skills. Proficient in C++, PYTHON, JAVASCRIPT, and SQL. Passionate about implementing and launching new projects
+Programming Languages: Python, C++, Javascript, SQl.
+Looking for , work experience , job oppurtunities: software engineer
+

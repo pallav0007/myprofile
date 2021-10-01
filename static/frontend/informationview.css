@@ -1,0 +1,120 @@
+body{
+background: #1a2a6c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wrapper{
+    display: flex;
+
+
+    flex-direction: row;
+
+    justify-content: space-between;
+    padding: 20px;
+    align-items: stretch;
+
+
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+}
+.sidebar{
+
+    flex: 1;
+
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2%;
+    border-radius: 4%;
+    color: white;
+background: rgb(94,239,241);!important;
+background: linear-gradient(0deg, rgba(94,239,241,1) 0%, rgba(4,30,86,1) 100%);!important;
+
+    justify-content: stretch;
+}
+.profile-image{
+    flex: 2;
+    border-radius: 50%;
+}
+.bio{
+    flex: 2;
+}
+.accounts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon{
+    padding: 20%;
+    margin: 5%;
+    font-size: 50px;
+}
+.contact-form{
+    width: 80%;!important;
+    height: 100%;!important;
+}
+
+
+.describe{
+background: #9CECFB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        color: white;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.personal-information{
+      flex: 2;
+
+    border-radius: 4%;
+background: rgb(255,115,115);
+background: linear-gradient(0deg, rgba(255,115,115,1) 14%, rgba(112,0,8,1) 80%);
+
+
+}
+
+.fields{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.criteria{
+    align-items: stretch;
+    padding: 2%;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.btn {
+    width: 80%;!important;
+    height: 2%;!important;
+    color: #1a2a6c;!important;
+background: #FDFC47;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.sc{
+    height: 1%;!important;
+}
+.pro-img{
+    border-radius: 50%;!important;
+    /*width: 80%;!important;*/
+    /*height: 80%;!important;*/
+}
+
